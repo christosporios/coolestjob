@@ -3,6 +3,16 @@ import { generateId } from "@/lib/utils"
 
 export const jobs: JobType[] = [
   {
+  id: generateId(), // Leave this as is, it will generate a unique ID
+  title: "🛠️ Founding Engineer", 
+  description: "We are looking for a founding engineer to support our clients in the U.S. and E.U.",
+  company: "Qurio - Growing Newsrooms at the Speed of Trust",
+  companyDescription: "We are a team of journalists and engineers redefining how newsrooms can deliver greater relevance and value to readers, gaining greater value in return. ",
+  compensation: 65000, // Annual compensation in EUR
+  email: "tassos@getqurio.com", // Email where applications will be sent
+  location: " Omonoia, Athens, Greece - No Remote" // Location (e.g., "Athens, Greece", "Athens / Remote", or "Remote")
+}
+  {
     id: generateId(),
     title: "👨‍💻 Frontend Developer",
     description:
