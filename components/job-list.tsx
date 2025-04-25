@@ -54,6 +54,14 @@ export default function JobList({ jobs }: JobListProps) {
           <div className="text-center py-10">
             <p className="text-gray-500 text-xl">😢 No jobs found matching your search.</p>
             <p className="text-gray-400 mt-2">Try different keywords or check back later!</p>
+            <Link
+              href="https://github.com/christosporios/coolestjob"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-purple-600 hover:text-purple-800 font-medium flex items-center gap-1 mt-4 justify-center"
+            >
+              <PlusCircle className="h-4 w-4" /> Be the first to add a job
+            </Link>
           </div>
         )}
       </div>
