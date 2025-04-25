@@ -1,30 +1,66 @@
-# Coolestjob clone
+# CoolestJob.gr 🚀
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A curated list of jobs with transparent compensation, from companies that pass the vibe check, with a single-email application process.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/christosporios-projects/v0-coolestjob-clone)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/DMGmIeO0IXl)
+## How to Add a Job
 
-## Overview
+Want to add a job to coolestjob.gr? Follow these steps to submit a job listing via a Pull Request:
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+### 1. Fork the Repository
 
-## Deployment
+Start by forking this repository to your GitHub account.
 
-Your project is live at:
+### 2. Add Your Job to the Data File
 
-**[https://vercel.com/christosporios-projects/v0-coolestjob-clone](https://vercel.com/christosporios-projects/v0-coolestjob-clone)**
+Open the `data/jobs.ts` file and add your job listing to the `jobs` array. Follow the existing format:
 
-## Build your app
+\`\`\`typescript
+{
+  id: generateId(), // Leave this as is, it will generate a unique ID
+  title: "🚀 Your Job Title", // Include an appropriate emoji
+  description: "A detailed description of the role, responsibilities, and requirements.",
+  company: "Your Company Name",
+  companyDescription: "A one-sentence description of your company.",
+  compensation: 60000, // Annual compensation in EUR
+  email: "jobs@yourcompany.com", // Email where applications will be sent
+  location: "Athens, Greece" // Location (e.g., "Athens, Greece", "Athens / Remote", or "Remote")
+}
+\`\`\`
 
-Continue building your app on:
+### 3. Guidelines for Job Listings
 
-**[https://v0.dev/chat/projects/DMGmIeO0IXl](https://v0.dev/chat/projects/DMGmIeO0IXl)**
+- **Be transparent about compensation**: All listings must include the actual compensation.
+- **Keep descriptions clear and concise**: Provide enough detail without being overwhelming.
+- **Use appropriate emojis**: Add a relevant emoji to your job title.
+- **Specify location clearly**: Use "Athens, Greece", "Athens / Remote", or "Remote".
+- **Provide a valid email**: Make sure the email address is correct and monitored.
 
-## How It Works
+### 4. Submit a Pull Request
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+After adding your job listing:
+
+1. Commit your changes
+2. Push to your fork
+3. Open a Pull Request to the main repository
+
+### 5. Review Process
+
+Our team will review your PR to ensure it meets our guidelines. We may suggest changes or ask questions before merging.
+
+## Vibe Check Criteria
+
+We only list jobs from companies that:
+
+- Offer fair and transparent compensation
+- Have a positive work culture
+- Respect work-life balance
+- Provide meaningful work
+- Have an easy application process
+
+## Questions?
+
+If you have any questions about adding a job or about coolestjob.gr in general, please email us at hello@coolestjob.gr.
+
+---
+
+✨ Happy job hunting! ✨
