@@ -12,7 +12,7 @@ export default function Footer() {
 
           <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-center">
             <Link
-              href="https://github.com/coolestjob/coolestjob.gr"
+              href="https://github.com/christosporios/coolestjob"
               target="_blank"
               rel="noopener noreferrer"
               className="text-purple-600 hover:text-purple-800 font-medium flex items-center gap-1"
