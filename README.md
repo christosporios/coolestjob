@@ -14,7 +14,7 @@ Start by forking this repository to your GitHub account.
 
 Open the `data/jobs.ts` file and add your job listing to the `jobs` array. Follow the existing format:
 
-\`\`\`typescript
+```typescript
 {
   id: generateId(), // Leave this as is, it will generate a unique ID
   title: "🚀 Your Job Title", // Include an appropriate emoji
@@ -25,7 +25,7 @@ Open the `data/jobs.ts` file and add your job listing to the `jobs` array. Follo
   email: "jobs@yourcompany.com", // Email where applications will be sent
   location: "Athens, Greece" // Location (e.g., "Athens, Greece", "Athens / Remote", or "Remote")
 }
-\`\`\`
+```
 
 ### 3. Guidelines for Job Listings
 
