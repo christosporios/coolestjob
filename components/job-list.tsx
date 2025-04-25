@@ -25,7 +25,7 @@ export default function JobList({ jobs }: JobListProps) {
     <div className="space-y-6">
       <div className="flex justify-between items-center mb-4">
         <Link
-          href="https://github.com/coolestjob/coolestjob.gr"
+          href="https://github.com/christosporios/coolestjob"
           target="_blank"
           rel="noopener noreferrer"
           className="text-purple-600 hover:text-purple-800 font-medium flex items-center gap-1 text-sm"
