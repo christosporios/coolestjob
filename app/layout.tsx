@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "CoolestJob.gr | Jobs with Transparent Compensation",
   description:
     "Curated jobs from companies that pass the vibe check, with transparent compensation and easy application.",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({

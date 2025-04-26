@@ -60,24 +60,26 @@ ${name || "<name>"}`
   const cardContent = (
     <>
       <CardHeader className="pb-2">
-        <div className="flex justify-between items-start">
-          <div>
-            <CardTitle className="text-xl font-bold">{job.title}</CardTitle>
-            <CardDescription className="text-lg font-medium mt-1">
-              ✨ {job.company} ✨
-              <div className="text-sm font-normal text-gray-600 mt-1">{job.companyDescription}</div>
-            </CardDescription>
-          </div>
-          <div className="bg-gradient-to-r from-green-400 to-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-md transform rotate-3 hover:rotate-0 transition-transform">
+        <CardTitle className="text-xl font-bold">{job.title}</CardTitle>
+        <div className="flex flex-wrap items-center justify-between mt-1">
+          <CardDescription className="text-lg font-medium flex-grow">
+            <div className="flex items-center">
+              <span>✨</span>
+              <span className="mx-1">{job.company}</span>
+              <span>✨</span>
+            </div>
+            <div className="text-sm font-normal text-gray-600 mt-1">{job.companyDescription}</div>
+          </CardDescription>
+          <div className="flex-shrink-0 ml-2 bg-gradient-to-r from-green-400 to-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-md whitespace-nowrap">
             💰 {formatCurrency(job.compensation)} €/year
           </div>
         </div>
-      </CardHeader>
-      <CardContent>
-        <div className="flex items-center mb-3 text-gray-600">
+        <div className="flex items-center mt-3 text-gray-600 text-sm">
           <span className="mr-1">{getLocationEmoji(job.location)}</span>
           <span>{job.location}</span>
         </div>
+      </CardHeader>
+      <CardContent>
         <p className="text-gray-700">{job.description}</p>
       </CardContent>
       <CardFooter className="flex flex-col gap-3 w-full">
@@ -85,7 +87,7 @@ ${name || "<name>"}`
           <DialogTrigger asChild>
             <ApplyButton ref={dialogRef} />
           </DialogTrigger>
-          <DialogContent className="bg-white rounded-xl border-4 border-purple-400">
+          <DialogContent className="bg-white rounded-xl border-4 border-purple-400 max-w-md w-full">
             <DialogHeader>
               <DialogTitle className="text-center text-xl">
                 ✉️ Apply to {job.title} at {job.company} ✉️
@@ -124,10 +126,10 @@ ${name || "<name>"}`
           </DialogContent>
         </Dialog>
 
-        <div className="flex gap-2 w-full">
+        <div className="flex flex-wrap gap-2 w-full">
           <Link
             href={`/jobs/${job.id}`}
-            className="text-purple-600 hover:text-purple-800 font-medium flex items-center justify-center gap-1 text-sm flex-1"
+            className="text-purple-600 hover:text-purple-800 font-medium flex items-center justify-center gap-1 text-sm flex-1 min-w-[140px]"
           >
             <ExternalLink className="h-4 w-4" /> View Permalink
           </Link>
@@ -137,7 +139,7 @@ ${name || "<name>"}`
               href={job.externalLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800 font-medium flex items-center justify-center gap-1 text-sm flex-1"
+              className="text-blue-600 hover:text-blue-800 font-medium flex items-center justify-center gap-1 text-sm flex-1 min-w-[140px]"
             >
               <ExternalLink className="h-4 w-4" /> Full Job Post
             </Link>
