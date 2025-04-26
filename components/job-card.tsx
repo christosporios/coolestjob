@@ -63,7 +63,10 @@ ${name || "<name>"}`
         <div className="flex justify-between items-start">
           <div>
             <CardTitle className="text-xl font-bold">{job.title}</CardTitle>
-            <CardDescription className="text-lg font-medium mt-1">✨ {job.company} ✨</CardDescription>
+            <CardDescription className="text-lg font-medium mt-1">
+              ✨ {job.company} ✨
+              <div className="text-sm font-normal text-gray-600 mt-1">{job.companyDescription}</div>
+            </CardDescription>
           </div>
           <div className="bg-gradient-to-r from-green-400 to-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-md transform rotate-3 hover:rotate-0 transition-transform">
             💰 {formatCurrency(job.compensation)} €/year
@@ -75,7 +78,6 @@ ${name || "<name>"}`
           <span className="mr-1">{getLocationEmoji(job.location)}</span>
           <span>{job.location}</span>
         </div>
-        <p className="text-gray-600 mb-4 italic">"{job.companyDescription}"</p>
         <p className="text-gray-700">{job.description}</p>
       </CardContent>
       <CardFooter className="flex flex-col gap-3 w-full">
@@ -122,12 +124,25 @@ ${name || "<name>"}`
           </DialogContent>
         </Dialog>
 
-        <Link
-          href={`/jobs/${job.id}`}
-          className="text-purple-600 hover:text-purple-800 font-medium flex items-center justify-center gap-1 text-sm w-full"
-        >
-          <ExternalLink className="h-4 w-4" /> View Full Listing
-        </Link>
+        <div className="flex gap-2 w-full">
+          <Link
+            href={`/jobs/${job.id}`}
+            className="text-purple-600 hover:text-purple-800 font-medium flex items-center justify-center gap-1 text-sm flex-1"
+          >
+            <ExternalLink className="h-4 w-4" /> View Permalink
+          </Link>
+
+          {job.externalLink && (
+            <Link
+              href={job.externalLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 font-medium flex items-center justify-center gap-1 text-sm flex-1"
+            >
+              <ExternalLink className="h-4 w-4" /> Full Job Post
+            </Link>
+          )}
+        </div>
       </CardFooter>
     </>
   )

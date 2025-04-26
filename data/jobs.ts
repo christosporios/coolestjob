@@ -1,9 +1,8 @@
 import type { JobType } from "@/types/job"
-import { generateId } from "@/lib/utils"
 
 export const jobs: JobType[] = [
   {
-    id: generateId(),
+    id: "frontend-developer-techflow",
     title: "👨‍💻 Frontend Developer",
     description:
       "We're looking for a talented frontend developer to join our team. You'll be working on our main product, building new features and improving the user experience.",
@@ -12,9 +11,10 @@ export const jobs: JobType[] = [
     compensation: 55000,
     email: "jobs@techflow.io",
     location: "Athens, Greece",
+    externalLink: "https://techflow.io/careers/frontend-developer"
   },
   {
-    id: generateId(),
+    id: "ux-designer-designhub",
     title: "🎨 UX Designer",
     description:
       "Join our design team to create beautiful and intuitive user experiences. You'll be working closely with product managers and developers to bring ideas to life.",
@@ -23,9 +23,10 @@ export const jobs: JobType[] = [
     compensation: 60000,
     email: "careers@designhub.com",
     location: "Athens / Remote",
+    externalLink: "https://designhub.com/careers/ux-designer"
   },
   {
-    id: generateId(),
+    id: "full-stack-engineer-growthlabs",
     title: "🔧 Full Stack Engineer",
     description:
       "We need a full stack engineer who can work across our entire platform. Experience with React, Node.js, and PostgreSQL is required.",
@@ -34,9 +35,10 @@ export const jobs: JobType[] = [
     compensation: 75000,
     email: "hiring@growthlabs.io",
     location: "Remote",
+    externalLink: "https://growthlabs.io/careers/full-stack-engineer"
   },
   {
-    id: generateId(),
+    id: "devops-engineer-cloudscale",
     title: "☁️ DevOps Engineer",
     description:
       "Help us build and maintain our cloud infrastructure. Experience with AWS, Kubernetes, and CI/CD pipelines is a must.",
@@ -45,9 +47,10 @@ export const jobs: JobType[] = [
     compensation: 80000,
     email: "jobs@cloudscale.tech",
     location: "Athens, Greece",
+    externalLink: "https://cloudscale.tech/careers/devops-engineer"
   },
   {
-    id: generateId(),
+    id: "product-manager-productmind",
     title: "📊 Product Manager",
     description:
       "Lead product development for our flagship application. You'll work with all departments to ensure we're building the right features for our users.",
@@ -56,9 +59,10 @@ export const jobs: JobType[] = [
     compensation: 70000,
     email: "careers@productmind.co",
     location: "Athens / Remote",
+    externalLink: "https://productmind.co/careers/product-manager"
   },
   {
-    id: generateId(),
+    id: "data-scientist-datadriven",
     title: "🧠 Data Scientist",
     description:
       "Join our data team to extract insights from our vast dataset. You'll build models to help us make better decisions and improve our product.",
@@ -67,9 +71,10 @@ export const jobs: JobType[] = [
     compensation: 85000,
     email: "talent@datadriven.ai",
     location: "Remote",
+    externalLink: "https://datadriven.ai/careers/data-scientist"
   },
   {
-    id: generateId(),
+    id: "backend-developer-serverside",
     title: "⚙️ Backend Developer",
     description:
       "Design and implement scalable APIs and services. Experience with Go or Rust is preferred, but not required.",
@@ -78,9 +83,10 @@ export const jobs: JobType[] = [
     compensation: 72000,
     email: "jobs@serverside.dev",
     location: "Athens, Greece",
+    externalLink: "https://serverside.dev/careers/backend-developer"
   },
   {
-    id: generateId(),
+    id: "founding-engineer-schemalabs",
     title: "🚀 Founding Engineer",
     description:
       "Join our early-stage startup as a founding engineer. You'll have a significant impact on our product and company culture.",
@@ -89,5 +95,6 @@ export const jobs: JobType[] = [
     compensation: 65000,
     email: "join@schemalabs.gr",
     location: "Athens / Remote",
+    externalLink: "https://schemalabs.gr/careers/founding-engineer"
   },
 ]
