@@ -1,6 +1,22 @@
 import JobListings from "@/components/job-listings"
 import Footer from "@/components/footer"
 import { jobs } from "@/data/jobs"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "coolestjob.gr - Jobs with transparent compensation",
+  description: "Find jobs with transparent compensation, from companies that pass the vibe check, with a single-email application process.",
+  openGraph: {
+    title: "coolestjob.gr - Jobs with transparent compensation",
+    description: "Find jobs with transparent compensation, from companies that pass the vibe check, with a single-email application process.",
+    images: [{
+      url: `/api/og?title=${encodeURIComponent("coolestjob.gr")}&company=${encodeURIComponent("Find your dream job")}`,
+      width: 1200,
+      height: 630,
+      alt: "coolestjob.gr - Find your dream job"
+    }]
+  }
+}
 
 export default function Home() {
   return (

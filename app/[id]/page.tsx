@@ -56,8 +56,8 @@ export default function JobPage({ params }: Props) {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-pink-50 to-purple-50">
-      <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-wrap items-center justify-between mb-6 gap-4">
+      <div className="container mx-auto px-4 py-6">
+        <div className="flex flex-wrap items-center justify-between mb-4 gap-4">
           <Link href="/" className="inline-flex items-center text-purple-600 hover:text-purple-800">
             <ArrowLeft className="mr-2 h-4 w-4" /> Back to all jobs
           </Link>

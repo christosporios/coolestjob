@@ -1,11 +1,19 @@
 import Link from "next/link"
 import { PlusCircle, Mail } from "lucide-react"
+import EmailSignup from "@/components/email-signup"
 
 export default function Footer() {
   return (
     <footer className="bg-purple-100 py-6 mt-12">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="mb-6 max-w-xl mx-auto">
+          <h3 className="text-purple-800 font-medium mb-3 text-center">
+            Stay updated with new opportunities ✨
+          </h3>
+          <EmailSignup />
+        </div>
+
+        <div className="flex flex-col md:flex-row justify-between items-center pt-4 border-t border-purple-200">
           <div className="mb-4 md:mb-0">
             <p className="text-purple-800 font-medium">© {new Date().getFullYear()} coolestjob.gr</p>
           </div>

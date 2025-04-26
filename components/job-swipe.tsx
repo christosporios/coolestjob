@@ -149,7 +149,7 @@ export default function JobSwipe({ jobs }: JobSwipeProps) {
       <div className="fixed inset-0 pointer-events-none" style={{ zIndex: -1 }}></div>
 
       {/* Card container with centered card but full-width dragging area */}
-      <div className="relative w-full h-[500px] flex justify-center items-center">
+      <div className="relative w-full h-[520px] flex justify-center items-center">
         <motion.div
           drag
           dragElastic={0.9}
@@ -159,7 +159,11 @@ export default function JobSwipe({ jobs }: JobSwipeProps) {
           whileDrag={{ scale: 1.02, cursor: "grabbing" }}
           className="absolute w-full max-w-md cursor-grab z-10"
         >
-          <JobCard job={jobs[currentIndex]} isSwipeCard={true} dialogRef={dialogButtonRef} />
+          <JobCard
+            job={jobs[currentIndex]}
+            isSwipeCard={true}
+            dialogRef={dialogButtonRef as React.RefObject<HTMLButtonElement>}
+          />
         </motion.div>
       </div>
 

@@ -33,7 +33,7 @@ export default function CopyPermalinkButton({ jobId }: CopyPermalinkButtonProps)
     }, [showToast])
 
     const copyToClipboard = () => {
-        const url = `${window.location.origin}/jobs/${jobId}`
+        const url = `${window.location.origin}/${jobId}`
         navigator.clipboard.writeText(url)
             .then(() => {
                 setCopied(true)
