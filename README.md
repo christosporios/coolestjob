@@ -16,14 +16,15 @@ Open the `data/jobs.ts` file and add your job listing to the `jobs` array. Follo
 
 ```typescript
 {
-  id: generateId(), // Leave this as is, it will generate a unique ID
+  id: "your-job-title-company", // Create a unique ID with job title and company
   title: "🚀 Your Job Title", // Include an appropriate emoji
   description: "A detailed description of the role, responsibilities, and requirements.",
   company: "Your Company Name",
   companyDescription: "A one-sentence description of your company.",
   compensation: 60000, // Annual compensation in EUR
   email: "jobs@yourcompany.com", // Email where applications will be sent
-  location: "Athens, Greece" // Location (e.g., "Athens, Greece", "Athens / Remote", or "Remote")
+  location: "Athens, Greece", // Location (e.g., "Athens, Greece", "Athens / Remote", or "Remote")
+  externalLink: "https://yourcompany.com/careers/your-job" // Optional full job posting URL
 }
 ```
 
@@ -34,6 +35,8 @@ Open the `data/jobs.ts` file and add your job listing to the `jobs` array. Follo
 - **Use appropriate emojis**: Add a relevant emoji to your job title.
 - **Specify location clearly**: Use "Athens, Greece", "Athens / Remote", or "Remote".
 - **Provide a valid email**: Make sure the email address is correct and monitored.
+- **Use permanent IDs**: Create a descriptive, URL-friendly ID that won't change.
+- **Include an external link**: If you have a full job posting on your website, include the link.
 
 ### 4. Submit a Pull Request
 
