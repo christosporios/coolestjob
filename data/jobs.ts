@@ -2,6 +2,16 @@ import type { JobType } from "@/types/job"
 
 export const jobs: JobType[] = [
   {
+    generateId("qurio-founding-eng"), // Leave this as is, it will generate a unique ID
+    title: "🛠️ Founding Engineer",
+    description: "We are looking for a founding engineer to support our clients in the U.S. and E.U.",
+    company: "Qurio - Growing Newsrooms at the Speed of Trust",
+    companyDescription: "Building technology that helps newsrooms stay relevant to their audiences",
+    compensation: 65000, // Annual compensation in EUR
+    email: "tassos@getqurio.com",
+    location: "Athens, Greece - No Remote"
+  },
+  }
     id: "frontend-developer-techflow",
     title: "👨‍💻 Frontend Developer",
     description:
