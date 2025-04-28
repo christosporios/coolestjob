@@ -7,4 +7,5 @@ export interface JobType {
   compensation: number
   email: string
   location: string
+  externalLink?: string
 }
