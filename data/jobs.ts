@@ -18,7 +18,7 @@ export const jobs: JobType[] = [
     description: "We are looking for a founding engineer to support our clients in the U.S. and E.U.",
     company: "Qurio - Growing Newsrooms at the Speed of Trust",
     companyDescription: "Building technology that helps newsrooms stay relevant to their audiences",
-    compensation: 65000,
+    compensation: 45000,
     email: "tassos@getqurio.com",
     location: "Athens, Greece - No Remote"
   },
