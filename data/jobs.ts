@@ -22,4 +22,14 @@ export const jobs: JobType[] = [
     email: "tassos@getqurio.com",
     location: "Athens, Greece - No Remote"
   },
-]
+  {
+  "Practical AI Coach",
+  title: "Practical AI Coach - Starttech",
+  description: "We’re not looking for an AI theorist. We’re looking for a coach. A doer. A mentor. A sharp and curious mind who thrives at the intersection of technology and people.",
+  company: "Your Company Name",
+  companyDescription: "At Starttech Ventures, we’re building B2B SaaS companies from the ground up. AI is already reshaping how we work — and we want to go all-in.",
+  compensation: 44000,
+  email: "tsakiri@starttech.eu",
+  location: "Athens, Greece",
+  externalLink: "https://www.starttech.vc/career/practical-ai-coach/"
+  },
