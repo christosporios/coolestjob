@@ -1,5 +1,7 @@
 # CoolestJob.gr 🚀
 
+**No longer operational.**
+
 A curated list of jobs with transparent compensation, from companies that pass the vibe check, with a single-email application process.
 
 ## How to Add a Job
